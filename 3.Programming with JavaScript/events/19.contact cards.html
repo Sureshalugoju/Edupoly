@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  <body>
+    <form onsubmit="save(event)">
+        <label>Name: </label>
+        <input type="text" name="name"/><br><br>
+        <label>Number:</label>
+        <input type="text" name="number"/><br><br>
+        <label>Email:</label>
+        <input type="email" name="email" /><br><br>
+        <label>Enter image Url:</label>
+        <input type="url" name="url"/><br><br>
+        <button>submit</button>
+    </form>
+    <div id="d1"></div>
+    
+ 
+  <script>
+    var arr=[]
+    
+    function save(e){  
+      e.preventDefault()
+      var obj={}
+      var formdata =new FormData(e.target)
+      for(var j of formdata.entries()){
+        obj[j[0]]=j[1] 
+      }
+      arr.push(obj)
+      console.log(arr) 
+
+      document.getElementById('d1').innerHTML = ""
+
+      
+    arr.forEach(function(a){
+    var cdv = document.createElement("div");
+    document.getElementById('d1').appendChild(cdv);
+
+     
+    var imgs = document.createElement("img");
+    imgs.src=a.url;
+    cdv.appendChild(imgs);
+    
+
+    var ch3 = document.createElement("h3");
+    ch3.innerHTML="name::"+ a.name;
+    cdv.appendChild(ch3);
+
+    var ch3 = document.createElement("h3")
+    ch3.innerHTML="number::"+ a.number
+    cdv.appendChild(ch3)
+
+    var ch3 = document.createElement("h3")
+    ch3.innerHTML="email::"+ a.email
+    cdv.appendChild(ch3)
+
+    })
+    }
+    // function save(e){
+    //     e.preventDefault();
+    //    var formdata=new FormData(e.target)
+    //   console.dir(e)
+    //    var dataobject={};
+    //    for(var field of formdata.entries()){
+    //     var x = formdata.getAll(field[0]);
+    //     console.log(x)
+    //     if(x.length>1){
+    //       dataobject[field[0]]=x;
+    //     }
+    //     else{
+    //       dataobject[field[0]]=formdata.get(field[0])
+    //     }
+    //    }
+    //    console.log(dataobject)
+    // }
+
+  </script>
+</html>

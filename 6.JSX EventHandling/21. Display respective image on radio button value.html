@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function abc(e) {
+        if (e.target.value === "male") {
+          document.getElementById("d1").src =
+            "https://i.pinimg.com/736x/2a/4e/8d/2a4e8dab6791ed643d5180bc72167f6d.jpg";
+        } else {
+          document.getElementById("d1").src =
+            "https://cdn.pixabay.com/photo/2014/04/02/14/10/female-306407_640.png";
+        }
+      }
+      var ndiv = (
+        <div>
+          <input
+            type="radio"
+            id="input1"
+            name="edoti"
+            value="male"
+            onClick={abc}
+          />
+          <label>:Male</label>
+          <input
+            type="radio"
+            id="input2"
+            name="edoti"
+            value="female"
+            onClick={abc}
+          />
+          <label>:Female</label>
+          <br />
+          <br />
+          <br />
+          <img
+            id="d1"
+            style={{ width: "450px", height: "400px", border: null }}
+          ></img>
+        </div>
+      );
+
+      ReactDOM.render(ndiv, document.getElementById("root"));
+    </script>
+  </body>
+</html>

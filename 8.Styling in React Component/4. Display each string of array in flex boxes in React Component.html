@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+   <div id="root"></div>
+   <!-- 4. Display each string of array in flex boxes in React Component -->
+    <script type="text/babel">
+     var Abc = function () {
+        var [ar, setAr] = React.useState(["praveen", "ravi", "dasu", "kiran"])
+            return <div style={{display:"flex",listStyle:"none"}}>
+                    {
+                        ar.map((item)=>{
+                            return <li style={{border:"1px solid",padding:"10px",margin:"10px"}}>{item}</li>
+                        })
+                    }
+                   </div>
+            
+        }
+        ReactDOM.render(<Abc />, document.getElementById("root"))
+    </script>
+  </body>
+</html>

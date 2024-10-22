@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="d1"> </div>
+        
+        <script type="text/babel"> 
+        
+        
+
+            function Todo(){
+                var [x, setX]=React.useState([])
+
+                function abc(){
+                    var value=document.getElementById("edoti").value;
+                    setX([...x,value])
+                   
+                }
+                function deletetodo(index){
+                    x.splice(index,1)
+                    setX([...x])
+
+                }
+  
+                return <div>
+                        <input type="text" id="edoti" />
+                        <button onClick={abc}>add todo</button>
+                        {
+                        x.map((item,i)=>{
+                            return <li>{item}<button onClick={()=>{deletetodo(i)}}>Delete</button></li>
+                                
+                                
+                    
+                        })
+                    }
+                       
+                    </div>
+                    
+            }
+            ReactDOM.render(<Todo></Todo>,document.getElementById("d1"))
+        </script>
+    </body>
+</html>

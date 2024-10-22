@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      #croc {
+        border: 2px solid red;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>16.image rotation on click.html</p> -->
+    <img id="croc" onclick="changeimg(event)" img />
+  </body>
+
+  
+  <script>
+    // 16.image rotation on click.html
+
+    var imgs = ["/G:/html.png", "/G:/css.png", "/G:/javascript.png"];
+    var i = 0;
+
+    document.getElementById("croc").src = imgs[i];
+
+
+    function changeimg(e) {
+      if (i === imgs.length - 1) {
+        i = 0;
+        e.target.src = imgs[i];
+      } else {
+        i = i + 1;
+        e.target.src = imgs[i];
+      }
+    }
+  </script>
+</html>

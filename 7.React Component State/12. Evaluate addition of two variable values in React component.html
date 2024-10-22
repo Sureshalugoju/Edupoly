@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+   <div id="root"></div>
+<!-- Evaluate addition of two variable values in React componenthtml -->
+    <script type="text/babel">
+
+       var Abc=function(){
+        var a=40;
+        var b=20;
+                    return <div>
+                            {
+                            <h1>{a+b}</h1>
+                            }
+                           </div>
+                    }
+        ReactDOM.render(<Abc />, document.getElementById("root"))
+    </script>
+  </body>
+</html>

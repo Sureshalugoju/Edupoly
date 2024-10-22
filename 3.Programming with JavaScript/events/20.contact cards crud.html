@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  <body>
+    <form onsubmit="save(event)">
+        <label>Name: </label>
+        <input type="text" name="name" id="in1"/><br><br>
+        <label>Number:</label>
+        <input type="text" name="number" id="in2"/><br><br>
+        <label>Email:</label>
+        <input type="email" name="email" id="in3"/><br><br>
+        <label>Enter image Url:</label>
+        <input type="url" name="url" id="in4"/><br><br>
+        <button>submit</button>
+    </form>
+    <button onclick="update()">updte</button>
+    <div id="d1">
+
+    </div>
+     
+ 
+  <script>
+   var index=0;
+    var arr=[]
+    function save(e){  
+      e.preventDefault()
+      var obj={}
+      var formdata =new FormData(e.target)
+      for(var j of formdata.entries()){
+        obj[j[0]]=j[1] 
+      }
+      arr.push(obj)
+      console.log(arr) 
+      genui()
+    }
+
+    function genui(){
+        document.getElementById('d1').innerHTML = ""
+  arr.forEach(function(a,i){
+    var cdv = document.createElement("div");
+    document.getElementById('d1').appendChild(cdv);
+
+     
+    var imgs = document.createElement("img");
+    imgs.src=a.url;
+    cdv.appendChild(imgs);
+    
+
+    var ch1 = document.createElement("h3");
+    ch1.innerHTML="name::"+ a.name;
+    cdv.appendChild(ch1);
+
+    var ch2 = document.createElement("h3")
+    ch2.innerHTML="number::"+ a.number
+    cdv.appendChild(ch2)
+
+    var ch3 = document.createElement("h3")
+    ch3.innerHTML="email::"+ a.email
+    cdv.appendChild(ch3)
+
+    var btn = document.createElement("button")
+    btn.innerHTML="Edit"
+    btn.onclick=function(){
+        document.getElementById("in1").value=a.name;
+        document.getElementById("in2").value=a.number;
+        document.getElementById("in3").value=a.email;
+        document.getElementById("in4").value=a.url;
+        
+        index=i;
+    }
+    cdv.appendChild(btn)
+
+    
+
+    })
+    }
+
+    function update(){
+        arr[index].name=document.getElementById("in1").value
+        arr[index].number=document.getElementById("in2").value
+        arr[index].email=document.getElementById("in3").value
+        arr[index].url=document.getElementById("in4").value
+        genui()
+    }
+
+    // function save(e){
+    //     e.preventDefault();
+    //    var formdata=new FormData(e.target)
+    //   console.dir(e)
+    //    var dataobject={};
+    //    for(var field of formdata.entries()){
+    //     var x = formdata.getAll(field[0]);
+    //     console.log(x)
+    //     if(x.length>1){
+    //       dataobject[field[0]]=x;
+    //     }
+    //     else{
+    //       dataobject[field[0]]=formdata.get(field[0])
+    //     }
+    //    }
+    //    console.log(dataobject)
+    // }
+
+  </script>
+</html>

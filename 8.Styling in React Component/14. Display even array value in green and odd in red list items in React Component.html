@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+   <div id="root"></div>
+  
+   <!-- 14. Display even array value in green and odd in red list items in React Component -->
+    <script type="text/babel">
+    var Abc = function(){
+
+        var [x,setX]=React.useState([10,11,12,13,14,15,16,17,18,19,20])
+
+        return <div>
+            {
+                x.map((item)=>{
+                    return <li style={item%2===0?{color:"green"}:{color:"red"}}>{item}</li>
+                })
+            }
+        </div>
+    }
+    ReactDOM.render(<Abc/>,document.getElementById("root"))
+    </script>
+  </body>
+</html>

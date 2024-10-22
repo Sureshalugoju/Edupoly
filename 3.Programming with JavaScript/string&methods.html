@@ -1,0 +1,286 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      // String assignments
+      // Level 1
+      // 1.Take a string value from the user and print it in the console.
+      var user = "apple";
+      console.log(user);
+      // 2.Take 5 string values from the user and print them in the console.
+      var user = ["praveen", "suresh", "arun", "akhil", "shive"];
+      console.log(user);
+      // 3.Take a string value from the user and print the first character in the console.
+      var user = "apple";
+      var x = user.split("");
+      console.log(x[0]);
+
+      // 4.Take 5 string values from the user and print the first characters in the console.
+      var user = ["praveen", "suresh", "arun", "akhil", "shive"];
+      var x = user[0].split("");
+      console.log(x[0]);
+      // 5.Take a string value from the user and print the last character in the console.
+      var user = "apple";
+      var x = user.split("");
+      console.log(x[4]);
+      // 2nd way
+      var user = "apple";
+      var x = user.slice(-1);
+      console.log(x);
+      // 6.Take 5 string values from the user and print the last characters in the console.
+      var user = ["praveen", "suresh", "arun", "akhil", "shive"];
+      var x = user[user.length - 1];
+      console.log(x);
+      //   2ndway
+      var user = ["praveen", "suresh", "arun", "akhil", "shive"];
+      var x = user.slice(-1);
+      console.log(x);
+
+      // 7.Take a string value from the user and print the length of the string in the console.
+      var user = "suresh";
+      var x = user.split("");
+      console.log(x.length);
+      // 8.Take a string value from the user and print all the characters in the console.
+      var user = "suresh";
+      var x = user.split("");
+      for (i = 0; i <= x.length - 1; i++) {
+        console.log(i + "::" + x[i]);
+      }
+      // 9.Take a string value from the user and print only nataltere characters in the console. Given string: "abcdef", Expected output: "a" "c" "e"
+      // 10.Take a string value from the user and print all the characters in reverse order in the console. Given string: "abcdef", Expected output:"f" "e" "d" "c" "b" "a"
+      var user = "abcdef";
+      var x = user.split("").reverse();
+      console.log(x + "");
+      // 11.Take a string and check whether a given character is present in the string or not. Given string: "edupoly", given character: 'p', Expected output: true
+      var x = "edupoly";
+      var y = x.includes("p");
+      console.log(y);
+      // 12.Take a string and print the position(index) at which a given character occurs. Given string: "edupoly", given character:"p", Expected output: 3
+      var x = "edupoly";
+      var y = x.indexOf("p");
+      console.log(y);
+
+      // 13.Take two string values from the user, join them together(concatenate) and print it in the console.
+      var x = "suresh";
+      var y = "alugoju";
+      console.log(x + y);
+      // 2nd way
+      var x = "suresh";
+      var y = "alugoju";
+      console.log(x.concat(" " + y));
+      // 14.Copy the characters of a given string from one variable to another variable.
+      var x = "suresh";
+      var y = x;
+      console.log(y);
+      // 2nd way
+      var x = "suresh";
+      var y = x.slice(0);
+      // var y = x.slice(0, x.length);
+      console.log(y);
+      // 15.Print the reverse of a given string in the console.
+      var x = "suresh";
+      var y = x.split("").reverse().join("");
+      console.log(y);
+      // 16.Check whether a string is palindrome or not.
+
+      // Level 2
+      // 1.Take a string value and print all the positions(index) of a given character in the string. Given string: "banana", given character:'a', Expected output:1,3,5
+      var f = "banana";
+      var x = f.split("");
+      // console.log(x);
+      for (var j in f) {
+        if (f[j] === "a") {
+          console.log(j);
+        }
+      }
+      // 2.Take a string value and print the first occurence(index) of a given character in the string. Given string: "banana", given character:'a', Expected output:1
+      var f = "banana";
+      var x = f.indexOf("a");
+      console.log(x);
+      // 3.Take a string value and print the last occurence(index) of a given character in the string. Given string: "banana", given character:'a', Expected output:5
+      var f = "banana";
+      var x = f.lastIndexOf("a");
+      console.log(x);
+      // 4.Take a string value and print the count of a given character in the string. Given string: "banana", given character:'a', Expected output:3
+      var f = "banana";
+      var x = f.split("");
+      // console.log(x);
+      for (var j in f) {
+        if (f[j] === "a") {
+          console.log(f);
+        }
+      }
+      // 5.Find the reverse of a string using split(), reverse() and join() methods.
+      var f = "banana";
+      var x = f.split("").reverse().join("");
+      console.log(x);
+
+      //   Level 3
+
+      //   1.Find the first occurrence of a character in a given string.
+      var f = "banana";
+      var x = f.indexOf("a");
+      console.log(x);
+      //   2.Find the last occurrence of a character in a given string.
+      var f = "banana";
+      var x = f.lastIndexOf("a");
+      console.log(x);
+      //   3.Search all occurrences of a character in a given string.
+      var f = "banana";
+      var x = f.split("");
+      // console.log(x);
+      for (var j in f) {
+        if (f[j] === "a") {
+          console.log(j);
+        }
+      }
+      //   4.Count occurrences of a character in a given string.
+      var f = "banana";
+      var x = f.split("");
+      var count = 0;
+      for (var j in f) {
+        if (f[j] === "a") {
+          count = count + 1;
+        }
+      }
+      console.log("a occurrences of a character in a given string:-", count);
+      //   5.Find the highest frequency character in a string.
+      //   6.Find the lowest frequency character in a string.
+      //   7.Count the frequency of each character in a string.
+      //   8.Remove the first occurrence of a character from a string.
+      var a = "banana";
+      var b = a.replace("a", "");
+      console.log(b);
+      //   9.Remove the last occurrence of a character from a string.
+
+      //   10.Delete all occurrences of a character from a string.
+      var a = "banana";
+      var b = a.replaceAll("a", "");
+      console.log(b);
+      //   11.Remove all repeated characters from a given string.
+      //   12.Replace the first occurrence of a character with another in a string.
+      var a = "banana";
+      var b = a.replace("a", "'suresh'");
+      console.log(b);
+      //   13.Replace the last occurrence of a character with another in a string.
+      //   14.Put all occurrences of a character with another in a string.
+      var a = "banana";
+      var b = a.replaceAll("a", "'suresh'");
+      console.log(b);
+      //   15.Find the first occurrence of a word in a given string.
+      var a = "hai my name is suresh kumar and my name is sureshkumar";
+      var b = a.indexOf("my");
+      console.log(b);
+      //   16.Find the last occurrence of a word in a given string.
+      var a = "hai my name is suresh kumar and my name is sureshkumar";
+      var b = a.lastIndexOf("my");
+      console.log(b);
+      //   17.Search all occurrences of a word in a given string.
+      var a = "hai my name is suresh kumar and my name is sureshkumar";
+      var b = a.matchAll("my");
+      console.log(b);
+      //   18.Count occurrences of a word in a given string.
+      //   19.Remove the first occurrence of a word from the string.
+      //   20.Remove the last occurrence of a word in a given string.
+      //   21.Delete all occurrences of a word in a given string.
+      //   22.A Trim leading white space characters from a given string.
+      //   23.Trim trailing white space characters from a given string.
+      //   24.Trim both leading and trailing white space characters from a given string.
+      var x = "             surya   ";
+      var y = x.trim();
+      console.log(y);
+      //   25.Remove all extra blank spaces from the given string.
+      //   26.A String is Palindrome or Not
+      //   27.A String Is an Anagram or Not
+      //   28.Find the length of a string.
+      var a = "suresh";
+      console.log(a.length);
+      //   29.Copy one string to another string.
+      var x = "suresh";
+      b = a;
+      console.log(b);
+      //   30.Concatenate two strings.
+      var a = "suresh";
+      var b = "alugoju";
+      var x = a.concat(b);
+      console.log(x);
+      //   31.Compare two strings.
+
+      //   32.Convert lowercase string to uppercase.
+      var name = "suresh";
+      var x = name.toUpperCase();
+      console.log(x);
+      //   33.Convert uppercase string to lowercase.
+      var name = "SURESH";
+      var x = name.toLowerCase();
+      console.log(x);
+      //   34.Toggle case of each character of a string.
+      //   35.Find a total number of alphabets, digits or special character in a string.
+      //   36.Count the total number of vowels and consonants in a string.
+      //   37.Count the total number of words in a string.
+      //   38.Find the reverse of a string.
+      //   39.Check whether a string is a palindrome or not.
+      //   40.Reverse order of words in a given string.
+      //   41.Reverse of a number using toString, split, reverse and join methods.
+      //   42.Elimination of zeroes from a given number.
+      //   43.Find the number of digits of a given number using toString() and length property
+      //   44.Write a program to take a string and print only the numeric characters using. Example: Input->‘Q1STR5684AK’; Output->‘15684’
+      //   45.Search for a given number in an array
+      //   4.Print the number of words in a given string
+      //   47.Remove the single spaces from a given sentence
+      //   48.remove all the spaces from a given string
+      //   49.Search a given string in a sentence(both uppercase and lowercase)
+      //   50.Write a program to convert a sample sentence string into an array of all the words in the sentence. Example: Input->‘Hello World’; Output->[‘Hello’,‘World’]
+      //   51.Write a program to eliminate all numeric characters from a string. Example: Input->‘Q1STR5684A’; Output-> ‘QSTRAK’
+      //   52.Write a program to take a string and print only the numeric characters. Example: Input->‘Q1STR5684AK’; Output->‘15684’
+      //   53.Write a program to take a string and print the number of characters in the string. Example: Input->‘Hello’; Output->5
+      //   54.Write a program to take a 16-digit credit card number and replace the first 12 characters with ‘X’. Example:Input->‘9765143265387960’; Output->‘XXXXXXXXXXXX7960’
+      //   55.Write a program to take a string and replace all vowels with ‘8’. Example: Input->‘This is awesome’; Output->‘Th8s 8s 8w8s8m8’
+      //   56.Write a program to hide the middle six digits of a phone number. Example: Input-> '9876543210'; Output-> '98XXXXXX10'
+      //   57.Append the calling code of India(+91) to a given phone number. Example: Input-> '9876543210'; Output-> '+919876543210'
+
+      //   58.Check whether a given number is a valid phone number.
+      //           Example:Input-> '7654893274'; Output-> 'valid'
+      //           Input-> '785487438754'; Output-> 'invalid'.........(must be 10 digits)
+      //           Input-> '7854s54839'; Output-> 'invalid'.............(must NOT contain letters)
+
+      //   59.Check whether a given number is a valid credit card number. Example:
+      //           Example:
+      //           Input-> '7463836483647454'; Output-> 'valid'
+      //           Input-> '74638364836474548'; Output-> 'invalid'...(must be 16 digits)
+      //           Input-> '7463836w4836o745'; Output-> 'invalid'...(must contain only numbers)
+
+      //   60.Write a program to add hyphens (-) in between a given credit card number.
+      //           Example:
+      //           Input-> '6484638463487486'; Output-> '6484-6384-6348-7486'
+
+      //   61.Sort a given string
+      //           Example: ‘praveen’=>’aeenprv’
+      var name = "praveen";
+      var na = name.split("").sort().join("");
+      console.log(na);
+
+      //   62.Eliminate Duplicate characters in given string
+      //           Example: ‘praveengubbala’ => ‘pravengubl’
+
+      //   63.Write a program to print only numbers out of a given string
+      //           Example: let us take pr34s2v9q4
+      //           The output should be 3,4,2,9,4
+      var name = "pr34s2v9q4";
+      
+
+
+
+      let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
+
+let user = users.find(item => item.id == 1);
+
+console.log(user.name); // John
+
+    </script>
+  </body>
+</html>

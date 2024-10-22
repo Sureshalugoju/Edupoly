@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+   <div id="root"></div>
+  
+   <!-- 10. Apply green color if variable value is positive red for negative in React Component -->
+    <script type="text/babel">
+    var Abc = function(){
+
+        var [x,setX]=React.useState(0)
+
+        return <div>
+                {
+              <h1  style={x>0?{color:"green"}:{color:"red"}}>{x}</h1>
+
+                }
+                </div>
+               
+    }
+    ReactDOM.render(<Abc/>,document.getElementById("root"))
+    </script>
+  </body>
+</html>

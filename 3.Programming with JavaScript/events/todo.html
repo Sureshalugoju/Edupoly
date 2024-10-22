@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      li {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="in" />
+    <button onclick="addtodo()">add todo</button>
+
+    <ul id="list"></ul>
+
+    <script>
+      var todos = ["praveen", "suresh", "arun", "akhil", "shiva", "viney"];
+
+      function addtodo() {
+        var x = document.getElementById("in").value;
+        todos.push(x);
+        showtodo();
+      }
+
+      function deletetodo(i) {
+        // console.log(i)
+        todos.splice(i, 1);
+        showtodo();
+      }
+
+      function showtodo() {
+        document.getElementById("list").innerHTML = "";
+        todos.forEach(function (todo, i) {
+          var cli = document.createElement("li");
+          cli.innerHTML = todo;
+
+          var btn = document.createElement("button");
+          btn.innerHTML = "del";
+          cli.appendChild(btn);
+          btn.onclick = function () {
+            deletetodo(i);
+          };
+          document.getElementById("list").appendChild(cli);
+        });
+      }
+      showtodo();
+    </script>
+  </body>
+</html>

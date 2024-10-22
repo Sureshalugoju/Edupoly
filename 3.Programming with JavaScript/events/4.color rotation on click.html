@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>
+      #croc {
+        border: 2px solid red;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>4.color rotation on click</p> -->
+    <div id="croc" onclick="changecolor(event)"></div>
+  </body>
+  <script>
+    // 4.color rotation on click
+
+    var colours = ["red", "green", "yellow", "blue", "orange", "pink", "gray"];
+    var i = 0;
+
+    document.getElementById("croc").style.backgroundColor = colours[i];
+
+    function changecolor(e) {
+      if (i === colours.length - 1) {
+        i = 0;
+        e.target.style.backgroundColor = colours[i];
+      } else {
+        i = i + 1;
+        e.target.style.backgroundColor = colours[i];
+      }
+    }
+  </script>
+</html>

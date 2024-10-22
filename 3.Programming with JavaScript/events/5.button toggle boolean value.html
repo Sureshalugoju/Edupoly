@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <!-- <p>5.button toggle boolean value</p> -->
+    <button onclick="change()">toggle</button>
+    <i id="q5">true</i>
+  </body>
+  <script>
+    // 5.button toggle boolean value
+    function change() {
+      var a = document.getElementById("q5");
+      if (a.innerHTML === "true") {
+        a.innerHTML = "false";
+      } else {
+        a.innerHTML = "true";
+      }
+    }
+  </script>
+</html>

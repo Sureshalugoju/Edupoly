@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style>
+      #tg {
+        border: 2px solid red;
+        height: 200px;
+        width: 200px;
+      }
+      #bg {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>10.Change div background toggle button</p> -->
+    <div id="tg"></div>
+    <button onclick="toggle()" id="bg">Toggle</button>
+  </body>
+  <script>
+    // 10.Change div background toggle button
+    function toggle() {
+      var x = document.getElementById("tg").style.backgroundColor;
+
+      if (x === "yellow") {
+        document.getElementById("tg").style.backgroundColor = "";
+      } else {
+        document.getElementById("tg").style.backgroundColor = "yellow";
+      }
+    }
+  </script>
+</html>

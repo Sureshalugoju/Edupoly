@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <!-- <p>11.Toggle bulb on off</p> -->
+    <div>
+      <img id="d1" src="/G:/bulboff.jpg" />
+    </div>
+    <button id="d2" onclick="bulb()">On</button>
+  </body>
+
+
+  <script>
+    // 11.Toggle bulb on off
+    var x = document.getElementById("d1");
+    var y = document.getElementById("d2");
+    function bulb() {
+      if (y.innerHTML == "On") {
+        y.innerHTML = "Off";
+        x.src = "/G:/bulbon.jpg";
+      } else {
+        y.innerHTML = "On";
+        x.src = "/G:/bulboff.jpg";
+      }
+    }
+  </script>
+</html>

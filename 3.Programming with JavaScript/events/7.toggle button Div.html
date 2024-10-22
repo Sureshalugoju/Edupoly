@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <style>
+      #q7 {
+        border: 2px solid red;
+        height: 200px;
+        width: 400px;
+        padding: 20px;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>7.toggle button Div</p> -->
+    <div id="q7">im nothing</div>
+    <button onclick="Q7F()">True/False</button>
+  </body>
+  <script>
+    // 7.toggle button div
+    function Q7F() {
+      var a = document.getElementById("q7");
+      if (a.innerHTML === "True") {
+        a.innerHTML = "False";
+      } else {
+        a.innerHTML = "True";
+      }
+    }
+  </script>
+</html>

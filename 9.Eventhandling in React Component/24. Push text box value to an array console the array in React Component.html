@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        #d1{
+            cursor: pointer;
+        }
+    </style>
+  </head>
+
+  <body>
+   <div id="root"></div>
+  
+   <!-- 24. Push text box value to an array console the array in React Component -->
+
+<script type="text/babel">
+
+    var Abc = function(){
+        var [x,setX]=React.useState("")
+
+        function abc(e){
+           var inputValue = document.getElementById("d1").value
+           setX((oldValue)=>[...oldValue,inputValue])
+           console.log(x)
+        }
+
+       return <div>
+                    <input type="text" id="d1" />
+                    <button onClick={abc}>Click here to push value</button>
+                </div>
+
+        
+    }
+    ReactDOM.render(<Abc/>,document.getElementById("root"))
+    </script>
+  </body>
+</html>

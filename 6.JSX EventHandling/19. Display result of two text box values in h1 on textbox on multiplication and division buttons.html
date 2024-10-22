@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function abc() {
+          var a = +document.getElementById("input1").value;
+          var b=+document.getElementById("input2").value;
+
+        document.getElementById("d1").innerHTML =a*b
+      }
+
+      function xyz() {
+          var a=+document.getElementById("input1").value;
+          var b=+document.getElementById("input2").value;
+
+        document.getElementById("d1").innerHTML =a/b   
+      }
+
+      var ndiv = (
+        <div>
+          <input type="text" id="input1" />
+          <br />
+          <input type="text" id="input2" />
+          <br />
+          <br />
+          <button onClick={abc}>Mul</button>
+          <button onClick={xyz}>Div</button>
+          <h1 id="d1"></h1>
+        </div>
+      );
+
+      ReactDOM.render(ndiv, document.getElementById("root"));
+    </script>
+  </body>
+</html>

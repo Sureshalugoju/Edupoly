@@ -1,0 +1,625 @@
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+
+      // **if else, switch case and Loops
+
+      // **use if...else statements to solve the following problems
+
+      // 1.Write a program to check if a number is divisible by 7 or not.
+      n = 7;
+      n % 7 === 0 ? console.log("yes") : console.log("no");
+
+      // 2.Write a program to check if a number is a factor of 84 or not.
+      var num = 13;
+      if (84 % num === 0) {
+        console.log("it is a factor of 84");
+      } else {
+        console.log("it is not a factor of 84");
+      }
+      // 3.Write a program to check if a number is a factor of 96 or not.
+      var num = 98;
+      if (num < 96) {
+        if (96 % num === 0) {
+          console.log("it is a factor of 96");
+        } else {
+          console.log("it is not a factor of 96");
+        }
+      } else {
+        console.log("invalid number ");
+      }
+
+      // 4.and if the given number is more Than 96 program should say ‘not a valid input’
+      n = 95;
+      n > 96
+        ? console.log("not a valid input")
+        : console.log("it's a valid input");
+
+      // 5.Write a program to check if a number is multiple of 3 or not.
+      n = 12;
+      n % 3 == 0
+        ? console.log("it is a multiple of 3")
+        : console.log("it is not multiple of 3");
+      // 2nd way
+      num = 3;
+      if (num % 3 === 0) {
+        console.log("it is a multiple of 3");
+      } else {
+        console.log("it is not multiple of 3");
+      }
+
+      // 6.Write a program to check if a number is positive or not.
+      n = 5;
+      n > 0
+        ? console.log("given number positive")
+        : console.log("given number negative");
+
+      // 2nd way
+      num = 10;
+      if (num > 0) {
+        console.log("it is positive");
+      } else {
+        console.log("it is negative");
+      }
+
+      // 7.Write a program to check a number is having 4 at units place (984).
+      num = 10;
+      if (num % 10 === 4) {
+        console.log("it is having 4 at units place");
+      } else {
+        console.log("it is not having 4 at units place");
+      }
+
+      // 8.Write a program to check if a number is a 3 digit number or not.
+      n = 1000;
+      n >= 100 && n <= 999
+        ? console.log("it is a3 digit number")
+        : console.log("not a 3 digit number");
+      // 2nd way
+      num = 1000;
+      if (num >= 100 && num <= 999) {
+        console.log("it is a 3 digit number");
+      } else {
+        console.log("it is not a 3 digit number");
+      }
+
+      // 9.Write a program to print even or odd for a given number
+      n = 6;
+      n % 2 == 0 ? console.log("even") : console.log("odd");
+      // 2nd way
+      num = 5;
+      if (n % 2 === 0) {
+        console.log("even");
+      } else {
+        console.log("even");
+      }
+
+      // 10.Write a program to print the greatest number in given two numbers
+      a = 90;
+      b = 10;
+      a > b
+        ? console.log("a number is the gretest number")
+        : console.log("b number is the greatest number");
+      // 2nd way
+      num1 = 100;
+      num2 = 200;
+      if (num1 > num2) {
+        console.log("num1 is the gratest number");
+      } else {
+        console.log("num2 is the gratest number");
+      }
+
+      // 11.Write a program to print the least number in given two numbers
+      a = 9;
+      b = 10;
+      a < b
+        ? console.log("a number is the least number")
+        : console.log("b number is the least number");
+      // 2nd way
+      num1 = 100;
+      num2 = 200;
+      if (num1 < num2) {
+        console.log("num1 is the least number");
+      } else {
+        console.log("num2 is the least number");
+      }
+
+      // 12.Write a program to print the given two numbers in ascending order
+      a = 1;
+      b = 10;
+      a < b ? console.log("ascending", a, b) : console.log("descending", b, a);
+
+      // 2ndway
+      num1 = 10;
+      num2 = 20;
+      if (num1 < num2) {
+        console.log("num1,num2");
+      } else {
+        console.log("num2,num1");
+      }
+
+      // 13.Write a program to print the given two numbers in descending order
+      a = 1;
+      b = 2;
+      a > b ? console.log("ascending", a, b) : console.log("descending", b, a);
+
+      // 2ndway
+      num1 = 10;
+      num2 = 20;
+      if (num1 > num2) {
+        console.log("num1,num2");
+      } else {
+        console.log("num2,num1");
+      }
+      //14. Write a program to print the greatest number in given three numbers
+      var a = 100;
+      var b = 5000;
+      var c = 300;
+      if (a > b && a > c) {
+        console.log("greatest number is", a);
+      } else {
+        if (b > c && b > a) {
+          console.log("greatest number is", b);
+        } else {
+          if (c > a && c > b) console.log("greatest number is", c);
+        }
+      }
+      //15. Write a program to print the least number in given three numbers
+      var a = 12;
+      var b = 2;
+      var c = 30;
+      if (a < b && a < c) {
+        console.log("least number is", a);
+      } else {
+        if (b < c && b < a) {
+          console.log("least number is", b);
+        } else {
+          if (c < a && c < b) {
+            console.log("least number is", c);
+          }
+        }
+      }
+
+      // 16.Write a program to print the given three numbers in ascending order
+      var a = 10;
+      var b = 20;
+      var c = 30;
+      if (a > b && a > c) {
+        if (b > c) {
+          console.log(a, b, c);
+        } else {
+          console.log(a, c, b);
+        }
+      } else if (b > a && b > c) {
+        if (a > c) {
+          console.log(b, a, c);
+        } else {
+          console.log(b, c, a);
+        }
+      } else if (c > a && c > b) {
+        if (a > b) {
+          console.log(c, a, b);
+        } else {
+          console.log(c, b, a);
+        }
+      }
+      //17. Write a program to print the given three numbers in descending order
+      var a = 100;
+      var b = 20;
+      var c = 330;
+      if (a < b && a < c) {
+        if (b < c) {
+          console.log(a, b, c);
+        } else {
+          console.log(a, c, a);
+        }
+      } else if (b < a && b < c) {
+        if (a < c) {
+          console.log(b, a, c);
+        } else {
+          console.log(b, c, a);
+        }
+      } else if (c < a && c < b) {
+        if (a < b) {
+          console.log(c, a, b);
+        } else {
+          console.log(c, b, a);
+        }
+      }
+      //18. Write a program to take marks of three subjects and print the grade of student
+
+      var english = 48;
+      var maths = 75;
+      var science = 70;
+      var total = english + maths + science;
+      console.log("total marks=", total);
+      if (total >= 0 && total < 100) {
+        console.log("the student got C grade");
+      }
+      if (total >= 100 && total <= 200) {
+        console.log("the student got B grade");
+      }
+      if (total >= 200 && total <= 300) {
+        console.log("the student got A grade");
+      }
+      // 19.Character Is Vowel or Consonant
+
+      function checkChar(char) {
+        ch = char.toLowerCase();
+        const arr = ["a", "e", "i", "o", "u"];
+        if (arr.includes(ch)) return console.log("Given character is a Vowel");
+        return console.log("Given character is a Consonent");
+      }
+
+      checkChar("E");
+
+      // 20.A Character Is an Alphabet or Not
+      // 21.Uppercase, Lowercase, Special Character, or Digit
+      // 22.Leap Year
+      // 23.The Date Is Correct or Not
+      // 24.Voting Eligibility Checker
+
+      function age(ag) {
+        if (ag > 18) {
+          console.log("Eligibility for Voting ");
+        } else {
+          console.log("not Eligibility for Voting ");
+        }
+      }
+      age(19);
+      // 25.Check whether a number is negative, positive or zero.
+      var number = 45;
+      if (number > 0) {
+        console.log("POSITIVE");
+      } else if (number < 0) {
+        console.log("NEGATIVE");
+      } else {
+        console.log("ZERO");
+      }
+      // 26.Check whether a number is divisible by 5 and 11 or not.
+      // 27.Input any alphabet and check whether it is vowel or consonant.
+      // 28.Input any character and check whether it is the alphabet, digit or special character.
+      // 29.Check whether a character is an uppercase or lowercase alphabet.
+
+      // 30.Input week number and print weekday.
+      // 31.Input month number and print number of days in that month.
+      // 32.Count the total number of notes in a given amount.
+      // 33.Input angles of a triangle and check whether the triangle is valid or not.
+      // 34.Check whether the triangle is an equilateral, isosceles or scalene triangle.
+
+      // **Use Loops to get the output for the following programming questions iteration//
+
+      // 35.Write a program to print 1 to 10 numbers using a while loop
+      var i = 1;
+      while (i <= 10) {
+        console.log(i);
+        i = i + 1;
+      }
+      // 36.Write a program to print 10 to 1 numbers using a while loop
+      var i = 10;
+      while (i >= 1) {
+        console.log(i);
+        i = i - 1;
+      }
+      // 37.Write a program to print 5 to 15 numbers using a while loop
+      var i = 5;
+      while (i <= 15) {
+        console.log(i);
+        i = i + 1;
+      }
+      // 38.Write a program to print 15 to 10 numbers using a while loop
+      var i = 15;
+      while (i >= 10) {
+        console.log(i);
+        i = i - 1;
+      }
+      // 39.Write a program to print 1 to 10 even numbers using a while loop
+      var i = 1;
+      while (i <= 10) {
+        if (i % 2 === 0) {
+          console.log(i);
+        }
+        i = i + 1;
+      }
+      // 40.Write a program to print 1 to 10 odd numbers using a while loop
+      var i = 1;
+      while (i <= 10) {
+        if (i % 2 !== 0) {
+          console.log(i);
+        }
+        i = i + 1;
+      }
+      // 41.Write a program to print first ten multiples of 4 using a while loop (multiples of 4 are 4,8,12,16,20,.....)
+      // 42.Write a program to print multiplication table of 6 using while loop
+      var i = 1;
+      while (i <= 10) {
+        console.log("6 x", i, "=", 6 * i);
+        i = i + 1;
+      }
+      // 43.Print the squares of all numbers from 1 to 10.
+      var i = 1;
+      while (i <= 10) {
+        console.log(i ** 2);
+        i = i + 1;
+      }
+      // 44.Print the cubes of all numbers from 1 to 10.
+      i = 1;
+      while (i <= 10) {
+        console.log(i ** 3);
+        i = i + 1;
+      }
+      // 45.Write a program to print factors of 24 using while loop (factors of 24 are 1,2,3,4,6,8,12,24)
+      var i = 1;
+      while (i <= 24) {
+        if (24 % i === 0) {
+          console.log(i);
+        }
+        i = i + 1;
+      }
+      // 46.Write a program to print 1 to 10 numbers using a for loop
+
+      for (var i = 1; i <= 10; i++) {
+        console.log(i);
+      }
+      // 47.Write a program to print 10 to 1 numbers using a for loop
+      for (var i = 10; i >= 1; i--) {
+        console.log(i);
+      }
+      // 48.Write a program to print all numbers from 1 to a given number
+      for (var i = 1; i <= 10; i++) {
+        console.log(i);
+      }
+      // 49.Write a program to print 1 to 10 even numbers using a for loop
+      for (var i = 1; i <= 10; i++) {
+        if (i % 2 === 0) {
+          console.log(i);
+        }
+      }
+      // 50.Write a program to print 1 to 10 odd numbers using a for loop
+      for (var i = 1; i <= 10; i++) {
+        if (i % 2 !== 0) {
+          console.log(i);
+        }
+      }
+      // 51.Write a program to print first 10 multiples of 3 using a for loop
+      // 52.Write a program to print multiplication table of 6 using a for loop
+      // 53.Write a program to print all the factors of a given number
+      // 54.a program to read 5 numbers and print the maximum and minimum number
+      // 55.a program to read 5 numbers and print only the even numbers
+      // 56.Print all the digits of a given number
+      // 57.Write a program to print only even digits of a given number The output should be 4,2,6 Ex. Let us take 154256
+      // 58.Write a program to print only odd digits of a given number Ex. Let us take 1542763 The output should be 1,5,7,3
+      // 59.Write a program to print the number at 10’s place
+      // 60.Write a program to print the number at 100’s place
+      // 61.Write a program to print the number at 1000’s place
+      // 62.Write a program to print the number at 10000’s place
+      // 63.Write a program to find the LCM of given two numbers
+      // 64.Write a program to convert an octal number to a decimal
+
+      // ** Accumulation
+
+      // 65. Write a program to print the sum of 1 to 10 ( initialisation of sum variable with 0 )
+
+      var sum = 0;
+      for (var i = 1; i <= 10; i++) {
+        sum = sum + i;
+      }
+      console.log(sum);
+
+      // 66.Write a program to print the average of 1 to 10
+      var sum = 0;
+      for (var i = 1; i <= 10; i++) {
+        sum = sum + i;
+      }
+      console.log(sum / 10);
+      // 67.Write a program to print the sum of the numbers between the given two numbers
+
+      var a = 1;
+      var b = 10;
+      var sum = 0;
+      for (var i = a; i <= b; i++) {
+        sum = sum + i;
+      }
+      console.log(sum);
+      // 68.Write a program to print the sum of even numbers between the given two numbers
+      var a = 1;
+      var b = 10;
+      var sum = 0;
+      for (var i = a; i <= b; i++) {
+        if (i % 2 === 0) {
+          sum = sum + i;
+        }
+      }
+      console.log(sum);
+      // 69.Write a program to print the sum of odd numbers between the given two numbers
+      var a = 1;
+      var b = 10;
+      var sum = 0;
+      for (var i = a; i <= b; i++) {
+        if (i % 2 !== 0) {
+          sum = sum + i;
+        }
+      }
+      console.log(sum);
+      // 70.Write a program to print the product of the numbers between 1 to 10 ( initialisation of product variable with 1 )
+      // 71.Write a program to find the product of all odd numbers between 1 and 10.
+      // 72.Write a program to print the nth power of a given number. n can be any positive number. (n=3 r =4 then answer must be 3*3*3*3 )
+      // 73.Write a program to print factorial of a given number
+      // 74.Write a program to print the nCr of given ‘n’ and ‘r’
+      // 75.Write a program to print the number of factors of 24 using while loop (number of factors for 24 is 8)
+      // 76.Write a program to print the count of factors of a given number using for loop
+      // 77.Write a program to check a given number is a prime number or not
+      // 78.a program to read 5 numbers and print the sum of all entered numbers
+      // 79.a program to read 5 numbers and print average of n numbers
+      // 80.print Number of Digits in given number.
+      // 81.Write a program to count the number of ‘1’s in a given number.
+      // 82.Write a program to eliminate all 0’s from a given number.
+      // 83.Write a program to print all the digits that are less than 5 in a given number.
+      // 84.Print the greatest digit of a given number(n=1237456 then greatest digit is 7)
+      // 85.sum of all digits of a given number Ex: let us take 19345 is the given number The output should be 22 (1+9+3+4+5)=22
+      // 86.a program to print reverse of digits of a number
+      // 87.print the binary value of 8.
+      // 88.Write a program to convert a binary number into a decimal number
+      // 89.Write a program to check a given number is palindrome number or not
+      // 90.Write a program to check a given number is armstrong number or not Ex:153 is an armstrong number
+      // 91.Write a program to print the fibonacci number series up to a given number Expected output:0 1 1 2 3 5 8 13
+      // 92.Print A Calendar Taking Input From User Using Loop
+
+      //** Switch-case
+
+      // 93.Temperature Conversion Celsius To Fahrenheit And Vice Versa
+      // 94.Calculator
+      // 95.Find A Grade Of Given Marks or (Find a Grade of Given Marks Using Switch Case)
+      // 96.Find Radius, Circumference and Volume of Cylinder
+      // 97.Remove All Vowels From A String
+      // 98.Print day of week name using switch case.
+      // 99.Print total number of days in a month using switch case.
+      // 100.Check whether an alphabet is a vowel or consonant using a switch case.
+      // 101.Find the maximum between two numbers using the switch case.
+      // 102.Check whether a number is even or odd using a switch case.
+      // 103.Check whether a number is positive, negative or zero using a switch case.
+      // 104.Find roots of a quadratic equation using switch case.
+      // 105.Create a Simple Calculator using a switch case.
+
+      // **Advanced and nested loops
+      // advanced-loops(c:file)
+      // 1
+      for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      // 2
+      for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++) {
+          document.write("@");
+        }
+        document.write("<br>");
+      }
+      // 3
+      for (i = 0; i < 5; i++) {
+        for (j = 1; j <= 5; j++) {
+          document.write(j);
+        }
+        document.write("<br>");
+      }
+      // 4.
+      for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+          document.write(i);
+        }
+        document.write("<br>");
+      }
+      // 5.
+      for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      // 6
+      for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++) {
+          document.write(i);
+        }
+        document.write("<br>");
+      }
+      // 7
+      for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++) {
+          document.write(j);
+        }
+        document.write("<br>");
+      }
+      // 8
+      for (i = 5; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+          document.write(i);
+        }
+        document.write("<br>");
+      }
+      // 9
+      for (var i = 5; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+          document.write(j);
+        }
+        document.write("<br>");
+      }
+      // 10
+      for (i = 5; i >= 1; i--) {
+        for (j = 5; j >= i; j--) {
+          document.write(i);
+        }
+        document.write("<br>");
+      }
+      // 11
+      for (i = 5; i >= 1; i--) {
+        for (j = 5; j >= i; j--) {
+          document.write(j);
+        }
+        document.write("<br>");
+      }
+      // 12.
+      for (var i = 5; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      13;
+      for (i = 1; i <= 5; i++) {
+        for (k = 1; k <= 5 - i; k++) {
+          document.write("&nbsp");
+        }
+        for (j = 1; j <= i; j++) {
+          document.write(i + "&nbsp");
+        }
+        document.write("<br>");
+      }
+      // 14.
+      for (i = 1; i <= 5; i++) {
+        for (k = 1; k <= 5 - i; k++) {
+          document.write("&nbsp");
+        }
+        for (j = 1; j <= i; j++) {
+          document.write(j);
+        }
+        document.write("<br>");
+      }
+      //  15.
+      for (var i = 1; i <= 5; i++) {
+        for (k = 1; k <= 5 - i; k++) {
+          document.write("&nbsp");
+        }
+        for (var j = 1; j <= i; j++) {
+          document.write(i);
+        }
+        document.write("<br>");
+      }
+      // 16.
+      for (var i = 1; i <= 5; i++) {
+        for (k = 1; k <= 5 - i; k++) {
+          document.write("&nbsp");
+        }
+        for (var j = 1; j <= i; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- 6. Display the text of div on click in console in React Component -->
+    <script type="text/babel">
+
+     function Parent(){
+        
+            var [x,setX]=React.useState()
+            function abc(v){
+                alert("this is parent" + v)
+            }
+          
+       return <div style={{border:"2px solid green",padding:"5px",margin:"5px"}}>
+        <h1>This is parent</h1>
+        <button onClick={abc}>Lets say Hi</button>
+        <Child abc={abc}></Child>
+    </div> 
+    }
+     function Child(props){
+        return <div style={{border:"2px solid red",padding:"5px",margin:"5px"}}>
+            <h2>This is parent</h2>
+            <input type="text" id="d1"/>
+            <button onClick={()=>{props.abc(document.getElementById("d1").value)}}>Call parent Hi</button></div>
+     }
+
+      ReactDOM.render(<Parent></Parent>, document.getElementById("root"));
+    </script>
+  </body>
+</html>

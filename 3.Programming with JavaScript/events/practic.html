@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <!-- <ul id="fake"></ul>
+    <button onclick="abc()">fakestore</button>
+    <button onclick="countrys()">countrys</button> -->
+    <script>
+      // function abc() {
+      //   fetch("https://fakestoreapi.com/products")
+      //     .then(function (res) {
+      //       res.json().then(function (data) {
+      //         data.forEach((element) => {
+      //           var cli = document.createElement("li");
+      //           cli.innerHTML = element.title;
+      //           document.getElementById("fake").appendChild(cli);
+      //         });
+      //       });
+      //     })
+      //     .catch();
+      // }
+
+      // function getallcountrys() {
+      //   var p = new Promise(function (resolve, reject) {
+      //     fetch("https://restcountries.com/v3/all")
+      //       .then(function (res) {
+      //         res.json().then(function (data) {
+      //           resolve(data);
+      //         });
+      //       })
+      //       .catch(function (err) {
+      //         reject(err);
+      //       });
+      //   });
+
+      //   return p;
+      //   // console.log(p);
+      // }
+
+      // function countrys() {
+      //   getallcountrys()
+      //     .then(function (p) {
+      //       p.forEach((element) => {
+      //         var vbtn = document.createElement("button");
+      //         vbtn.innerHTML = "fghj";
+      //         // document.getElementById("fake").appendChild(vbtn);.
+      //         var cli = document.createElement("li");
+      //         cli.innerHTML = element.name.common;
+      //         document.getElementById("fake").appendChild(cli);
+      //       });
+      //     })
+      //     .catch(function (err) {
+      //       console.log(err);
+      //     });
+      // }
+
+      // fetch("https://restcountries.com/v3/all")
+
+      // // 1st way
+      // function add(a, b) {
+      //   console.log(a + b);
+      // }
+      // add(10, 20);
+
+      // //  2nd way
+      // function sub(a, b) {
+      //   console.log(a - b);
+      // }
+      // sub(10, 50);
+
+      // // 3rd way
+      // function ad(a, b, cb) {
+      //   if (b === 0) {
+      //     cb("error is ther");
+      //   } else {
+      //     cb(a + b);
+      //   }
+      // }
+      // ad(10, 20, function (res) {
+      //   console.log(res);
+      // });
+
+      // // 4th way
+      // function div(a, b, c) {
+      //   if (b === 0) {
+      //     c("error", null);
+      //   } else {
+      //     c(null, a + b);
+      //   }
+      // }
+      // div(10, 30, function (err, res) {
+      //   if (err) {
+      //     console.log(err);
+      //   } else {
+      //     console.log(res);
+      //   }
+      // });
+
+      // // 5th way
+      // function prom(a, b) {
+      //   if (b === 0) {
+      //     return Promise.reject("error");
+      //   } else {
+      //     return Promise.resolve(a + b);
+      //   }
+      // }
+      // prom(10, 0)
+      //   .then(function (res) {
+      //     console.log(res);
+      //   })
+      //   .catch(function (err) {
+      //     console.error(err);
+      //   });
+
+      // // set timeout
+
+      // setTimeout(function () {
+      //   console.log("hello");
+      // }, 5000);
+
+      // // set intervel
+      // var i = 1;
+      // var timer = setInterval(function () {
+      //   console.log(i++);
+      //   if (i === 6) {
+      //     clearInterval(timer);
+      //   }
+      // }, 1000);
+      //
+    </script>
+
+    <button onclick="getFake()">get fake api</button>
+    <button onclick="getCountrys()">get countries</button>
+    <ul id="lis"></ul>
+
+    <script>
+
+       var i = 1;
+      var timer = setInterval(function () {
+        console.log(i++);
+        
+        if (i === 6) {
+          clearInterval(timer);
+        }
+      }, 1000);
+      async function Country() {
+        var x = await fetch("https://restcountries.com/v3/all");
+        var z = await x.json();
+        return z;
+      }
+
+      function getCountrys() {
+        Country().then(function (x) {
+          x.forEach((element) => {
+            var cli = document.createElement("li");
+            cli.innerHTML = element.name.common;
+            document.getElementById("lis").appendChild(cli);
+          });
+        });
+      }
+
+      //   fetch("https://restcountries.com/v3/all").then(function (data) {
+      //     data
+      //       .json()
+      //       .then(function (res) {
+      //         res.forEach((element) => {
+      //           var cli = document.createElement("li");
+      //           cli.innerHTML = element.name.common;
+      //           document.getElementById("lis").appendChild(cli);
+      //         });
+      //       })
+      //       .catch();
+      //   }).catch;
+      // }
+    </script>
+  </body>
+</html>

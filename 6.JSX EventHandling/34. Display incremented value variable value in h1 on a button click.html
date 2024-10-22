@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  
+  <body>
+    <div id="main"></div>
+    <script type="text/babel">
+      var x = 120;
+
+      function abc(){
+        x++;
+        document.getElementById("d1").innerHTML=x;
+      }
+      
+      var ndiv=<div>
+        <h1 id="d1">{x}</h1>
+        <button onClick={abc}>Increment</button>
+        </div>
+        ReactDOM.render(ndiv,document.getElementById("main"))
+    </script>
+  </body>
+</html>

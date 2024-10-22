@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <style>
+      #rectangle {
+        border: 2px solid black;
+        width: 100px;
+        height: 50px;
+      }
+      #croc,
+      #main,
+      #tg {
+        border: 2px solid red;
+        height: 200px;
+        width: 200px;
+      }
+      #q7 {
+        border: 2px solid red;
+        height: 200px;
+        width: 400px;
+        padding: 20px;
+        font-size: x-large;
+      }
+      #l {
+        background-color: aquamarine;
+      }
+      #d {
+        background-color: red;
+      }
+      #dislik,
+      #lik {
+        color: red;
+      }
+      #bg {
+        background-color: orange;
+      }
+      #main1:hover,
+      #main2:hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>1.0 insert text to h1</p>
+    <button onClick="abc()">Add Text</button>
+    <h1 id="q1"></h1>
+
+    <p>2.color change button click</p>
+    <div id="rectangle"></div>
+    <br />
+    <button onClick="red()">RED</button>
+    <button onClick="green()">GREEN</button>
+    <button onClick="blue()">BLUE</button>
+    <button onClick="reset()">RESET</button>
+    <br />
+    <br />
+
+    <p>3.Change button background color on click</p>
+    <button id="btncolor" onclick="bt()">white</button>
+    <br />
+    <br />
+    <p>4.color rotation on click</p>
+    <div id="croc" onclick="changecolor(event)"></div>
+
+    <p>5.button toggle boolean value</p>
+    <button onclick="change()">toggle</button>
+    <i id="q5">true</i>
+
+    <p>6.toggle button</p>
+    <button id="q6" onclick="change1()">On</button>
+
+    <p>7.toggle button Div</p>
+    <div id="q7">im nothing</div>
+    <button onclick="Q7F()">True/False</button>
+
+    <p>8.Like and Dislike Button</p>
+    <button id="l" onclick="like(event)">Like</button>
+    <l id="lik"></l>
+    <br /><br />
+    <button id="d" onclick="dislike()">Dislike</button>
+    <l id="dislik"></l>
+
+    <p>9.Change div bg color</p>
+    <div id="main"></div>
+    <button onclick="on()" id="main1">ON</button>
+    <button onclick="off()" id="main2">OFF</button>
+
+    <p>10.Change div background toggle button</p>
+    <div id="tg"></div>
+    <button onclick="toggle()" id="bg">Toggle</button>
+
+    <p>11.Toggle bulb on off</p>
+    <div>
+      <img id="d1" src="/G:/bulboff.jpg" style="width: 200px; height: 200px"/>
+    </div>
+
+    <button id="d2" onclick="bulb()">On</button>
+
+    <!-- ******************************************************************************************************************************************** -->
+    <!-- ******************************************************************************************************************************************** -->
+    <!-- ******************************************************************************************************************************************** -->
+    <script>
+      // 1.0 insert text to h1
+      function abc() {
+        document.getElementById("q1").innerHTML =
+          "Welcome to a different World";
+        console.log();
+      }
+      // 2.color change button click
+      function red() {
+        document.getElementById("rectangle").style.backgroundColor = "red";
+      }
+      function green() {
+        document.getElementById("rectangle").style.backgroundColor = "green";
+      }
+      function blue() {
+        document.getElementById("rectangle").style.backgroundColor = "blue";
+      }
+      function reset() {
+        document.getElementById("rectangle").style.backgroundColor = "";
+      }
+      // 3.Change button background color  on click
+      function bt() {
+        document.getElementById("btncolor").innerHTML = "Green";
+        document.getElementById("btncolor").style.color = "White";
+        document.getElementById("btncolor").style.backgroundColor = "green";
+      }
+      // 4.color rotation on click
+
+      var colours = [
+        "red",
+        "green",
+        "yellow",
+        "blue",
+        "orange",
+        "pink",
+        "gray",
+      ];
+      var i = 0;
+
+      document.getElementById("croc").style.backgroundColor = colours[i];
+
+      function changecolor(e) {
+        if (i === colours.length - 1) {
+          i = 0;
+          e.target.style.backgroundColor = colours[i];
+        } else {
+          i = i + 1;
+          e.target.style.backgroundColor = colours[i];
+        }
+      }
+      // 5.button toggle boolean value
+      function change() {
+        var a = document.getElementById("q5");
+        if (a.innerHTML === "true") {
+          a.innerHTML = "false";
+        } else {
+          a.innerHTML = "true";
+        }
+      }
+
+      // 6.toggle button
+      function change1() {
+        var a = document.getElementById("q6");
+        if (a.innerHTML === "On") {
+          a.innerHTML = "Off";
+        } else {
+          a.innerHTML = "On";
+        }
+      }
+      // 7.toggle button div
+      function Q7F() {
+        var a = document.getElementById("q7");
+        if (a.innerHTML === "True") {
+          a.innerHTML = "False";
+        } else {
+          a.innerHTML = "True";
+        }
+      }
+      // 8.Like and Dislike Button
+      // like
+      var x = 0;
+      function like() {
+        x++;
+        document.getElementById("lik").innerHTML = x;
+      }
+      // dislike
+      var y = 0;
+      function dislike() {
+        y++;
+        document.getElementById("dislik").innerHTML = y;
+      }
+      // 9.Change div bg color
+      function on() {
+        // document.getElementById("main1").style.backgroundColor="red"
+        document.getElementById("main").style.backgroundColor = "yellow";
+      }
+      function off() {
+        // document.getElementById("main2").style.backgroundColor="red"
+        document.getElementById("main").style.backgroundColor = "";
+      }
+      // 10.Change div background toggle button
+      function toggle() {
+        var x = document.getElementById("tg").style.backgroundColor;
+
+        if (x === "yellow") {
+          document.getElementById("tg").style.backgroundColor = "";
+        } else {
+          document.getElementById("tg").style.backgroundColor = "yellow";
+        }
+      }
+      // 11.Toggle bulb on off
+      var x = document.getElementById("d1");
+      var y = document.getElementById("d2");
+      function bulb() {
+        if (y.innerHTML == "On") {
+          y.innerHTML = "Off";
+          x.src = "/G:/bulbon.jpg";
+        } else {
+          y.innerHTML = "On";
+          x.src = "/G:/bulboff.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>

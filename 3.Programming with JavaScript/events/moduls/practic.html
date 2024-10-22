@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>hai suresh this is html element</h1>
+    <div id="jsp"></div>
+    <div id="rh1"></div>
+    <div id="jsxh1"></div>
+   <div id="cli"></div>>
+
+    </ul>
+    <script type="text/babel">
+     var ch1= document.createElement("h1");
+     ch1.innerHTML="this is js element";
+     ch1.style.color="pink"
+     ch1.style.border="2px solid green"
+     ch1.style.backgroundColor="2px solid green"
+     document.getElementById("jsp").appendChild(ch1)
+
+
+
+     var rh1=React.createElement("h1",{style:{color:'red'}},"this is react element")
+     ReactDOM.render(rh1,document.getElementById("rh1"))
+
+
+
+     var jsxh1=<h1 style={{color:"blue"}}>this is jsx element</h1>
+     ReactDOM.render(jsxh1,document.getElementById("jsxh1"))
+
+     
+     var na=["suresh","praveen","rajesh"]
+     var cli=<ul>
+      {
+        na.map((a)=>{return <li>{a}</li>})
+      }
+      </ul>
+     ReactDOM.render(cli,document.getElementById("cli"))
+
+    </script>
+  </body>
+</html>

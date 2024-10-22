@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <style>
+      #l {
+        background-color: aquamarine;
+      }
+      #d {
+        background-color: red;
+      }
+      #dislik,
+      #lik {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>8.Like and Dislike Button</p> -->
+    <button id="l" onclick="like(event)">Like</button>
+    <l id="lik"></l>
+    <br /><br />
+    <button id="d" onclick="dislike()">Dislike</button>
+    <l id="dislik"></l>
+  </body>
+  <script>
+    // 8.Like and Dislike Button
+    // like
+    var x = 0;
+    function like() {
+      x++;
+      document.getElementById("lik").innerHTML = x;
+    }
+    // dislike
+    var y = 0;
+    function dislike() {
+      y++;
+      document.getElementById("dislik").innerHTML = y;
+    }
+  </script>
+</html>

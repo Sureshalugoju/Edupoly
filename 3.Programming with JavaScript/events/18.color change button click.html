@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <style>
+      #rectangle {
+        border: 2px solid black;
+        width: 100px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>2.color change button click</p> -->
+    <div id="rectangle"></div>
+    <br />
+    <button onClick="red()">RED</button>
+    <button onClick="green()">GREEN</button>
+    <button onClick="blue()">BLUE</button>
+    <button onClick="reset()">RESET</button>
+    <br />
+    <br />
+    <script>
+      // 2.color change button click
+      function red() {
+        document.getElementById("rectangle").style.backgroundColor = "red";
+      }
+      function green() {
+        document.getElementById("rectangle").style.backgroundColor = "green";
+      }
+      function blue() {
+        document.getElementById("rectangle").style.backgroundColor = "blue";
+      }
+      function reset() {
+        document.getElementById("rectangle").style.backgroundColor = "";
+      }
+    </script>
+  </body>
+</html>

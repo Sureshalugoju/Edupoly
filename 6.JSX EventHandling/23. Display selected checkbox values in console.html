@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function abc(e) {
+        console.log(e.target.value);
+      }
+
+      var ndiv = (
+        <div>
+          <input id="ract" type="checkbox" value="ReactJS" onClick={abc} />
+          <label>:ReactJS</label>
+          <br />
+          <input id="ang" type="checkbox" value="Angular" onClick={abc} />
+          <label>:Angular</label>
+          <br />
+          <input type="checkbox" value="Nodejs" onClick={abc} />
+          <label>:Nodejs</label>
+          <br />
+          <input type="checkbox" value="Express" onClick={abc} />
+          <label>:Express</label>
+          <br />
+          <input type="checkbox" value="Mongodb" onClick={abc} />
+          <label>:Mongodb</label>
+          <br />
+          <input type="checkbox" value="Mongoose" onClick={abc} />
+          <label>:Mongoose</label>
+          <br />
+          <input type="checkbox" value="MySql" onClick={abc} />
+          <label>:MySql</label>
+          <br />
+          <h1 id="main"></h1>
+        </div>
+      );
+      ReactDOM.render(ndiv, document.getElementById("root"));
+    </script>
+  </body>
+</html>

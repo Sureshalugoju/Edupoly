@@ -1,0 +1,56 @@
+<html>
+  <body>
+    <!-- <p>14.Display images using URL</p> -->
+    <!-- <h1 style="color: red; display: flex; justify-content: center">
+      Display images using URL
+    </h1>
+    <div style="display: flex; justify-content: center; color: red">
+      <label>Enter image URL:</label>
+      <input type="url" id="input1" /><br />
+    </div>
+    <br />
+    <div style="font-size: large; display: flex; justify-content: center">
+      <button onclick="add()" style="background-color: orange">Add image</button
+      ><br />
+    </div>
+    <div id="imghere"></div>
+
+    <script>
+      var x = document.getElementById("imghere");
+      var y = document.getElementById("input1");
+      var arr = [];
+      function add() {
+        arr.push(y.value);
+        x.innerHTML = "";
+        arr.forEach(function (a) {
+          var x = document.createElement("img");
+          x.src = a;
+          document.getElementById("imghere").appendChild(x);
+        });
+      }
+      console.log(arr);
+    </script> -->
+    <!-- 14.Display images using URL.html -->
+    <label>Enter image URL:</label>
+    <input type="url" id="input1" /><br />
+    <button onclick="add()">Add image</button><br />
+    <div id="imghere"></div>
+
+    <script>
+      // 14.Display images using URL.html
+      var x = document.getElementById("imghere");
+      var y = document.getElementById("input1");
+      var arr = [];
+      function add() {
+        arr.push(y.value);
+        x.innerHTML = "";
+        arr.forEach(function (a) {
+          var x = document.createElement("img");
+          x.src = a;
+          document.getElementById("imghere").appendChild(x);
+        });
+      }
+      console.log(arr);
+    </script>
+  </body>
+</html>

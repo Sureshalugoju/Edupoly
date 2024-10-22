@@ -1,0 +1,418 @@
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      //##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1
+      //##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1
+      //##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1
+      //##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1
+      //##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1##**##LEVEL1
+
+      // For the Given array: [23,34,54,0,4,7] print all the Array values using a for loop. Expected output: 23 34 54 0 4 7
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = 0; i <= n.length - 1; i++) {
+        document.write(" ", " ");
+        document.write(n[i]);
+      }
+      document.write("<br>");
+      // print all numbers in an array except the first element. Expected output: 34 54 0 4 7
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = 1; i <= n.length - 1; i++) {
+        document.write(" ", " ");
+        document.write(n[i]);
+      }
+      document.write("<br>");
+      // Print all elements in an array except the last element Expected output: 23 34 54 0 4
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = 0; i < n.length - 1; i++) {
+        document.write(" ", " ");
+        document.write(n[i]);
+      }
+      document.write("<br>");
+      // Print all the numbers from last index to first index Expected output: 7 4 0 54 34 23
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = n.length - 1; i > -1; i--) {
+        if (i >= 0) {
+          console.log(n[i]);
+        }
+      }
+      document.write("<br>");
+      // Print all the numbers from last index to first index except the first element Expected output: 4 0 54 34 23
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = n.length - 2; i >= -1; i--) {
+        if (i >= 0) {
+          console.log(n[i]);
+        }
+      }
+      // Print all the numbers from last index to first index except the last element Expected output: 7 4 0 54 34
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = n.length - 1; i >= -1; i--) {
+        if (i > 0) {
+          console.log(n[i]);
+        }
+      }
+      // Print only the last 4 elements of an array. Expected output: 54 0 4 7
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = 0; i <= n.length - 1; i++) {
+        if (i >= 2) {
+          console.log(n[i]);
+        }
+      }
+      // For the Given array: [23,34,54,10,4,7] print values that are greater than the given number. Given number: 20, Expected output: 23,34,54
+      var ar = [23, 34, 54, 10, 4, 7];
+      for (i = 0; i <= ar.length - 1; i++) {
+        if (ar[i] >= 20) {
+          console.log(ar[i]);
+        }
+      }
+      // For the Given array: [23,34,54,10,4,7] print all the even numbers in an Array. Expected output: 34,54,10,4
+      var ar = [23, 34, 54, 10, 4, 7];
+      for (i = 0; i <= ar.length - 1; i++) {
+        if (ar[i] % 2 == 0) {
+          console.log(ar[i]);
+        }
+      }
+      // For the Given array: [23,34,54,10,4,7] print all the odd numbers in an Array. Expected output: 23,7
+      var ar = [23, 34, 54, 10, 4, 7];
+      for (i = 0; i <= ar.length - 1; i++) {
+        if (ar[i] % 2 !== 0) {
+          console.log(ar[i]);
+        }
+      }
+      // For the Given array: [23,-34,-54,10,-4,7] print all the positive numbers in an array. Expected output: 23,10,7
+      var ar = [23, -34, -54, 10, -4, 7];
+      for (i = 0; i <= ar.length - 1; i++) {
+        if (ar[i] > 0) {
+          console.log(ar[i]);
+        }
+      }
+      // Print only the 2 digit numbers from an array
+      var ar = [23, -34, -54, 10, -4, 7];
+      for (i = 0; i <= ar.length - 1; i++) {
+        if (ar[i] > 9) {
+          console.log(ar[i]);
+        }
+      }
+      // Print only multiples of 5 from an array
+      var ar = [23, 34, 54, 10, 4, 7];
+      for (i = 0; i <= ar.length - 1; i++) {
+        if (ar[i] % 5 == 0) {
+          console.log(ar[i]);
+        }
+      }
+      // Print only multiples of 2 AND 3 from an array
+      var ar = [23, 34, 54, 10, 4, 7];
+      for (i = 0; i <= ar.length - 1; i++) {
+        if (ar[i] % 2 == 0 && ar[i] % 3 == 0) {
+          console.log(ar[i]);
+        }
+      }
+      // Print only multiples of 3 OR 5 from an array
+      var ar = [23, 34, 54, 10, 4, 7];
+      for (i = 0; i <= ar.length - 1; i++) {
+        if (ar[i] % 3 == 0 || ar[i] % 5 == 0) {
+          console.log(ar[i]);
+        }
+      }
+
+      //##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2
+      //##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2
+      //##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2
+      //##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2
+      //##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2##**##LEVEL2
+
+      // For the Given array: [23,34,54,10,4,7] print the minimum number in an Array. Expected output: 4
+      var ar = [23, 34, 54, 10, 4, 7];
+      var min = ar[0];
+      for (i = 1; i < ar.length - 1; i++) {
+        if (min > ar[i]) {
+          min = ar[i];
+        }
+      }
+      console.log(min);
+
+      // For the Given array: [23,34,54,10,4,7] print the Maximum number in an array. Expected output: 54
+      const numbers = [23, 34, 54, 10, 4, 7];
+
+      let max = numbers[0];
+
+      for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+          maximum = numbers[i];
+        }
+      }
+      console.log(max);
+      // For the Given array: [23,34,54,10,4,7] sum of all the numbers in an Array. Expected output: 132
+      var ar = [23, 34, 54, 10, 4, 7];
+      sum = 0;
+      for (i = 0; i <= ar.length - 1; i++) {
+        sum = sum + ar[i];
+      }
+      console.log(sum);
+      // For the Given array: [23,34,54,10,4,7] Average of all the numbers in an Array. Expected output: 22
+      var ar = [23, 34, 54, 10, 4, 7];
+      sum = 0;
+      for (i = 0; i <= ar.length - 1; i++) {
+        sum = sum + ar[i];
+      }
+      console.log(sum / ar.length);
+      // For the Given array: [23,34,54,10,4,7] search if the given number is there in an array or not. Given number: 34, Expected output: true Given number: 26, Expected output: false
+      var ar = [23, 34, 54, 10, 4, 7];
+      var a = 34;
+      for (i = 0; i <= ar.length - 1; i++) {
+        if (ar[i] === a) {
+          console.log("Given number True:", a);
+        } else {
+          console.log("Given number False:", a);
+        }
+      }
+      // For the Given array: [23,34,54,10,34,7,23,10,34] print the total number of times an element found in the array. Given number: 23, Expected output: 2 Given number: 34, Expected output: 3 Given number: 10, Expected output: 2 Given number: 54, Expected output: 1
+      // For the Given array: [23,34,54,10,4,7] print index of a given element in an Array. Given number: 23, Expected output: 0 Given number: 34, Expected output: 1 Given number: 10, Expected output: 3 Given number: 54, Expected output: 2
+      // a program to store an array into another array var ar = [23,34,54,10,4,7] var br = [ ] Expected output: br = [23,34,54,10,4,7]
+      // Sort an array in ascending order. Given array: [23,34,54,10,4,7] Expected output: 4,7,10,23,34,54
+      // Store only even numbers of a given array in another array.
+      // print only the perfect squares in an array
+
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+      // EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****EDUPOLY****
+
+      // **javascript Basic Coding Introduction Practice assignments
+      // **Working with Linear Data Structures Arrays
+      // 1.write a script to print all array values in the console.
+      var stds = ["suresh", "praveen", "arun", "ramu", "mahesh", "jaleel"];
+      document.write(stds);
+      document.write("<br>");
+
+      // 2nd way
+      var stds = ["suresh", "praveen", "arun", "ramu", "mahesh", "jaleel"];
+      stds.forEach(function (a) {
+        console.log(a);
+      });
+
+      // 2.For the Given array: [23,34,54,0,4,7] print all the Array values using a for loop. Expected output: 23 34 54 0 4 7
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = 0; i <= n.length - 1; i++) {
+        document.write(" ", " ");
+        document.write(n[i]);
+      }
+      document.write("<br>");
+      // 2nd way
+      var n = [23, 34, 54, 0, 4, 7];
+      n.forEach(function (a) {
+        console.log(a);
+      });
+
+      // 3.print all numbers in an array except the first element. Expected output: 34 54 0 4 7
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = 1; i <= n.length - 1; i++) {
+        document.write(" ", " ");
+        document.write(n[i]);
+      }
+      document.write("<br>");
+      // 4.Print all elements in an array except the last element Expected output: 23 34 54 0 4
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = 0; i < n.length - 1; i++) {
+        document.write(" ", " ");
+        document.write(n[i]);
+      }
+      document.write("<br>");
+      // 5.Print all the numbers from last index to first index Expected output: 7 4 0 54 34 23
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = n.length - 1; i > -1; i--) {
+        if (i >= 0) {
+          console.log(n[i]);
+        }
+      }
+      document.write("<br>");
+      // 6.Print all the numbers from last index to first index except the first element Expected output: 4 0 54 34 23
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = n.length - 2; i >= -1; i--) {
+        if (i >= 0) {
+          console.log(n[i]);
+        }
+      }
+      // 7.Print all the numbers from last index to first index except the last element Expected output: 7 4 0 54 34
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = n.length - 1; i >= -1; i--) {
+        if (i > 0) {
+          console.log(n[i]);
+        }
+      }
+      // 8.Print only the last 4 elements of an array. Expected output: 54 0 4 7
+      var n = [23, 34, 54, 0, 4, 7];
+      for (var i = 0; i <= n.length - 1; i++) {
+        if (i >= 2) {
+          console.log(n[i]);
+        }
+      }
+
+      // 9.For the Given array: [23,34,54,10,4,7] print the minimum number in an Array. Expected output: 4
+      var arr = [23, 34, 54, 10, 4, 7];
+      var min = arr[0];
+      for (i = 0; i <= arr.length; i++) {
+        if (arr[i] < min) {
+          min = arr[i];
+          console.log(min);
+        }
+      }
+      // 10.For the Given array: [23,34,54,10,4,7] print the Maximum number in an array. Expected output: 54
+      var largest = arr[0];
+
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > largest) {
+          largest = arr[i];
+        }
+      }
+      console.log(largest);
+      // 11. For the Given array: [23,34,54,10,4,7] sum of all the numbers in an Array. Expected output: 132
+      var ar = [23, 34, 54, 10, 4, 7];
+      var sum = 0;
+      ar.forEach(function (x) {
+        sum = sum + x;
+      });
+      console.log(sum);
+
+      // 12.For the Given array: [23,34,54,10,4,7] Average of all the numbers in an Array. Expected output: 22
+      var ar = [23, 34, 54, 10, 4, 7];
+      var sum = 0;
+      ar.forEach(function (x) {
+        sum = sum + x;
+      });
+      aver = sum / ar.length;
+      console.log(aver);
+      // 13.For the Given array: [23,34,54,10,4,7] print values that are greater than the given number. Given number: 20, Expected output: 23,34,54
+      // 14.For the Given array: [23,34,54,10,4,7] print all the even numbers in an Array. Expected output: 34,54,10,4
+      var ar = [23, 34, 54, 10, 4, 7];
+      var z = ar.filter(function (x) {
+        if (x % 2 === 0) {
+          return true;
+        }
+      });
+      console.log(z);
+      // 15.For the Given array: [23,34,54,10,4,7] print all the odd numbers in an Array. Expected output: 23,7
+      var ar = [23, 34, 54, 10, 4, 7];
+      var x = ar.filter(function (n) {
+        if (n % 2 !== 0) {
+          return true;
+        }
+      });
+      console.log(x);
+      // 16.For the Given array: [23,-34,-54,10,-4,7] print all the positive numbers in an array. Expected output: 23,10,7
+      var ar = [23, -34, -54, 10, -4, 7];
+      var m = ar.filter(function (x) {
+        if (x > 0) {
+          return true;
+        }
+      });
+      console.log(m);
+      // 17.For the Given array: [23,34,54,10,4,7] search if the given number is there in an array or not. Given number: 34, Expected output: true Given number: 26, Expected output: false
+      var ar = [23, 34, 54, 10, 4, 7];
+      var z = 23;
+      // ar.forEach(function (x) {
+      //   if (x === z) {
+      //     console.log("true value:", x);
+      //   }
+      // });
+      var br = ar.filter(function (x) {
+        if (x === z) {
+          console.log("given number is true", x);
+        }
+      });
+      // 18.For the Given array: [23,34,54,10,34,7,23,10,34] print the total number of times an element found in the array. Given number: 23, Expected output: 2 Given number: 34, Expected output: 3 Given number: 10, Expected output: 2 Given number: 54, Expected output: 1
+      // 19.For the Given array: [23,34,54,10,4,7] print index of a given element in an Array. Given number: 23, Expected output: 0 Given number: 34, Expected output: 1 Given number: 10, Expected output: 3 Given number: 54, Expected output: 2
+      var ar = [23, 34, 54, 10, 4, 7];
+      var z = 34;
+      console.log(ar.indexOf(z));
+      // 2nd way
+      var ar = [23, 34, 54, 10, 4, 7];
+      var z = 34;
+      ar.forEach(function (x, i) {
+        if (x === z) {
+          console.log(ar.indexOf(z));
+        }
+      });
+
+      // 20.For the Given array: [23,34,54,10,34,7,23,10,34] eliminate duplicates in a given array Expected output: 23,34,54,10,7
+      var dp = [23, 34, 54, 10, 34, 7, 23, 10, 34];
+      //21. a program to store an array into another array var ar = [23,34,54,10,4,7] var br = [ ] Expected output: br = [23,34,54,10,4,7]
+      var ar = [23, 34, 54, 10, 4, 7];
+      var br = [];
+      ar.forEach(function (x) {
+        br.push(x);
+        return br;
+      });
+      console.log(br);
+      // 22.Sort an array in ascending order. Given array: [23,34,54,10,4,7] Expected output: 4,7,10,23,34,54
+      var ar = [23, 34, 54, 10, 4, 7];
+      ar.sort(function (a, b) {
+        return a - b;
+      });
+      console.log(ar);
+      // 23.Reduce the each element of the array by 25% and store in a separate array.
+      // 24.Store only even numbers of a given array in another array.
+      // 25.create a duplicate array for a given array.
+      // 26.Eliminate duplicates from a array
+      // 27.print only the perfect squares in an array
+      // 28.Print only the 2 digit numbers from an array
+      // 29.Print only multiples of 5 from an array
+      // 30.Print only multiples of 2 AND 3 from an array
+      // 31.Print only multiples of 3 OR 5 from an array
+      // 32.Increment 5% for all the salaries in a given array
+      // 33.For every basic salary present in the array, add 40% HRA, 92% DA, 10% Tax and display the final output
+      // 34.For every salary, deduct 10% tax for salaries less than 50000 and deduct 12% tax for salaries more than 50000
+      // 35.Print only those odd numbers in a given array which are divisible by 3.
+      // 35.Insert first 10 odd numbers in an empty array(for and while).
+      // 37.Print the elements present in the second half of the array.
+      // 38.Print the greatest of all 2-digit numbers present in an array.
+      // 39.Write a program to remove elements from an array which are not in the ascending order Ex: Original array: [12,34,11,56,37,98,23,67,109,45] Output : [12,34,56,98,109]
+      // 40.Write a program to sort the array based on the number of occurrences of elements Ex: original array: [1,2,5,6,2,1,6,1,2,6,2,1,2]; After the logic: [5,6,6,6,1,1,1,1,2,2,2,2,2]; //5 occurred one time,6 three times,1 occurred 4 times, 2 occurred 5 times
+      // 41.                            var ar = [19,12,23,4,15];
+      //                             var br = [26,37,18,79,10];
+      //                             a)Write script to merge array as the values of ar in the first and values of br next
+      //                                 Expected output: [19,12,23,4,15,26,37,18,79,10];
+      //                             b)Write script to merge array as the values of ar in the first and values of br next
+      //                                 Expected output: [26,37,18,79,10,19,12,23,4,15];
+
+      // 42.                            var ar = [1,2,3,7,8,9];
+      //                             var br = [4,5,6];
+      //                             Expected output: [1,2,3,4,5,6,7,8,9];
+
+      // 43.insert An Element Desired or Specific Position In An Array
+      // 44.Remove Duplicates Items In An Array
+      // 45.Delete Element From Array At Desired Or Specific Position
+      // 46.Check String Is Palindrome Or Not Using For Loop
+      // 47.Convert All Input String Simultaneously Into Asterisk ( * )
+      // 48.Read and print elements of the array. – using recursion.
+      // 49.Print all negative elements in an array.
+      // 50.Sum of all array elements. – using recursion.
+      // 51.Find a maximum and minimum element in an array. – using recursion.
+      // 52.Get the second largest element in an array.
+      // 53.Count the total number of even and odd elements in an array.
+      // 54.Count the total number of negative elements in an array.
+      // 55.Copy all elements from an array to another array.
+      // 56.Insert an element in an array.
+      // 57.Delete an element from an array at the specified position.
+      // 58.Count frequency of each element in an array.
+      // 59.Print all unique elements in the array.
+      // 60.Count the total number of duplicate elements in an array.
+      // 61.Delete all duplicate elements from an array.
+      // 62.Merge two arrays to the third array.
+      // 63.Find the reverse of an array.
+      // 64.Put even and odd elements of an array in two separate arrays.
+      // 65.Search an element in an array.
+      // 66.Sort array elements in ascending or descending order.
+      // 67.Sort even and odd elements of the array separately.
+      // 68.Right rotate an array.
+    </script>
+  </body>
+</html>

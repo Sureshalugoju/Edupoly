@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function abc(e) {
+        document.getElementById("main").innerHTML = e;
+      }
+
+      var ndiv = (
+        <div>
+          <button
+            onClick={() => {
+              abc(1);
+            }}
+          >
+            Button 1
+          </button>
+          <button
+            onClick={() => {
+              abc(10);
+            }}
+          >
+            Button 2
+          </button>
+          <button
+            onClick={() => {
+              abc(200);
+            }}
+          >
+            Button 3
+          </button>
+          <button
+            onClick={() => {
+              abc(9999);
+            }}
+          >
+            Button 4
+          </button>
+          <h1 id="main"></h1>
+        </div>
+      );
+      ReactDOM.render(ndiv, document.getElementById("root"));
+    </script>
+  </body>
+</html>

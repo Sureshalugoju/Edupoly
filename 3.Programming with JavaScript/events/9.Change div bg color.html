@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style>
+         #main {
+        border: 2px solid red;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>9.Change div bg color</p>
+    <div id="main"></div>
+    <button onclick="on()" id="main1">ON</button>
+    <button onclick="off()" id="main2">OFF</button>
+  </body>
+  <script>
+     // 9.Change div bg color
+     function on() {
+        // document.getElementById("main1").style.backgroundColor="red"
+        document.getElementById("main").style.backgroundColor = "yellow";
+      }
+      function off() {
+        // document.getElementById("main2").style.backgroundColor="red"
+        document.getElementById("main").style.backgroundColor = "";
+      }
+  </script>
+</html>

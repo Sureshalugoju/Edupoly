@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function abc(e) {
+        document.getElementById("here").innerHTML = e.target.value;
+      }
+
+      var ndiv = (
+        <div>
+          <select onClick={abc}>
+            <option value="IND">India</option>
+            <option value="USA">United States of America</option>
+            <option value="SRI">Srilanka</option>
+          </select>
+          <h1 id="here"></h1>
+        </div>
+      );
+      ReactDOM.render(ndiv, document.getElementById("root"));
+    </script>
+  </body>
+</html>
